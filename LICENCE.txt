@@ -1,0 +1,20 @@
+Licença de Uso - Gabriel Henrique Lins
+
+Copyright (c) 2025 Gabriel Henrique Lins. Todos os direitos reservados.
+
+Este software é fornecido como propriedade intelectual de Gabriel Henrique Lins. O uso, distribuição, modificação ou cópia do código-fonte é estritamente proibido sem a permissão expressa do proprietário da licença.
+
+1. **Uso Pessoal e Comercial**:
+   - Você pode usar este software para fins pessoais ou comerciais, desde que não distribua, modifique ou redistribua o código ou os binários sem a permissão explícita do proprietário.
+
+2. **Distribuição e Modificação**:
+   - O código-fonte não pode ser redistribuído ou modificado sem permissão. Para permissões específicas de modificação ou distribuição, entre em contato com [Seu Nome ou Nome da Empresa].
+
+3. **Garantias e Responsabilidade**:
+   - O software é fornecido "como está", sem garantias de qualquer tipo. O proprietário não se responsabiliza por danos, perdas ou quaisquer outros problemas resultantes do uso deste software.
+
+4. **Exclusões**:
+   - Nenhuma parte deste software pode ser utilizada em outros produtos ou serviços sem o consentimento prévio por escrito de [Seu Nome ou Nome da Sua Empresa].
+
+5. **Termos de Licenciamento**:
+   - Caso queira obter permissão para modificar ou redistribuir este código, entre em contato com Gabriel Henrique Lins por meio do e-mail gabrielhilins@gmail.com.
