@@ -1,19 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>REAL - SImulador de Orçamentos</title>
-        <link rel="stylesheet" href="/assets/styles/styles.css">
-    </head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>REAL - Simulador de Orçamentos</title>
+        <link rel="stylesheet" href="./assets/styles/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- Adicionando o Slick CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+      </head>
 
-    <body>
-        <header></header>
+  <body>
+    <header>
+      <nav>
+        <img src="./assets/img/Logo Verde Header.png" alt="Logo REAL Simulador de orçamentos" />
+        <ul id="nav-list">
+          <li><a id="home-link" href="#home">Início</a></li>
+          <li><a id="how-to-use-link" href="#how-to-use">Como Funciona</a></li>
+          <li><a id="benefits" href="#benefits">Benefícios</a></li>
+          <li><a id="free-visualization" href="#free-visualization">Visualização Grátis</a></li>
+        </ul>
+        <button id="get-it-now">Adquira já</button>
+      </nav>
+    </header>
 
-        <section></section>
+    <section id="hero">
+      <div class="hero-container">
+        <div class="right-panel">
+          <h1>Chega de Perder Tempo com Orçamentos Manuais.</h1>
+          <p>Deixe o REAL fazer isso por Você!</p>
+          <div class="buttons-div">
+            <div class="left-side">
+              <p>Impulsione seus orçamentos e Feche mais negócios!</p>
+              <button class="button-act">Tenha o REAL da sua empresa agora!</button>
+            </div>
+            <div class="right-side">
+              <a href="#benefits">Saiba mais sobre o REAL simulador de orçamentos</a>
+            </div>
+          </div>
+        </div>
+        <div class="left-panel">
+          <img src="./assets/img/Ilustracao 1.png" alt="Ilustração" />
+        </div>
+      </div>
+    </section>
 
-        <footer></footer>
+    <section id="benefits">
+      <div class="benefits-container">
+        <div class="benefits-header">
+          <h1>Vantagens de usar o REAL no seu negócio!</h1>
+          <p>Veja como o REAL pode otimizar o seu processo de orçamentos e aumentar seus ganhos e serviços fechados</p>
+        </div>
+        <div class="benefits-cards-container">
+          <div class="card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Automatização e Economia de Tempo</h3>
+            <p>Com o REAL, você automatiza o processo de criação de orçamentos, economizando horas de trabalho manual e garantindo respostas rápidas para seus clientes.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Precisão e Consistência</h3>
+            <p>Chega de erros humanos. O REAL oferece cálculos precisos e consistentes, garantindo que seus orçamentos estejam sempre corretos e dentro do padrão.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-pen"></i>
+            <h3>Personalização para qualquer empresa</h3>
+            <p>O REAL se adapta às necessidades de diferentes tipos de empresas. De lojas a prestadores de serviços, personalizar os orçamentos para sua área nunca foi tão simples.</p>
+          </div>
+          <div class="card">
+            <i class="fa-regular fa-face-smile"></i>
+            <h3>Facilidade de Uso</h3>
+            <p>Nosso simulador é intuitivo e fácil de usar. Sem complicações! Em poucos cliques, você gera orçamentos completos para sua empresa.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Aumento da Eficiência</h3>
+            <p>Automatize tarefas repetitivas e foque no que realmente importa: fechar mais negócios e crescer sua empresa.</p>
+          </div>
+          <div class="card">
+            <i class="fa-regular fa-comment"></i>
+            <h3>Melhoria na Comunicação com Clientes</h3>
+            <p>Orçamentos claros e profissionais gerados pelo REAL ajudam a construir confiança com seus clientes e facilitam a comunicação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <script src="/assets/scripts/script.js"></script>
-    </body>
+    <section id="how-to-use">
+        <div class="how-to-use-container">
+          <div class="how-to-use-header">
+            <h1>Como funciona o REAL</h1>
+            <p>Envie as informações do seu serviço</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <h3>O que você precisa fazer:</h3>
+                <p>Você, como empresa, preenche um formulário com os dados do serviço que deseja orçar, isso incluindo: como tipo de serviço, localização do piso, etc., quantidade, materiais necessários.</p>
+                <h3>O que você ganha:</h3>
+                <p>Um primeiro esboço de orçamento com base nas informações fornecidas.</p>
+              </div>
+              <div class="timeline-marker"></div>
+            </div>
+            <div class="timeline-item right">
+              <div class="timeline-content">
+                <h3>O que acontece a seguir:</h3>
+                <p>O REAL analisa as informações enviadas, aplicando fórmulas e lógicas matemáticas baseadas no tipo de serviço. Consideramos custos de materiais, mão de obra, e outros fatores que influenciam o preço final.</p>
+                <h3>O que você ganha:</h3>
+                <p>O REAL ajusta os cálculos para cada tipo de serviço, criando um orçamento preciso e adequado à sua demanda.</p>
+              </div>
+              <div class="timeline-marker"></div>
+            </div>
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <h3>Confirme o serviço:</h3>
+                <p>Se o orçamento atender às suas expectativas, você pode confirmar o serviço diretamente pelo REAL, agendando a data e os detalhes da execução.</p>
+              </div>
+              <div class="timeline-marker"></div>
+            </div>
+            <div class="timeline-item right">
+              <div class="timeline-content">
+                <h3>Execute e acompanhe:</h3>
+                <p>Com o serviço agendado, a equipe responsável executa o trabalho, e você pode acompanhar o progresso em tempo real pelo painel do REAL.</p>
+              </div>
+              <div class="timeline-marker"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="free-visualization">
+      <div class="free-visualization-header">
+        <h1>Simulação Gratuita de Orçamento - REAL</h1>
+      </div>
+      <p>Imagine que você é um Cliente Querendo um Orçamento para Instalação de Pisos</p>
+      <p>Você acabou de acessar o site de uma empresa de instalação de pisos, e está buscando saber o preço para colocar o piso em sua casa ou empresa. No site, você encontra um simulador de orçamento REAL, onde você pode preencher as informações sobre o serviço e obter um orçamento instantâneo, com base nas suas necessidades.</p>
+      <div class="simulador-container">
+        <div class="logo">
+          <img src="./assets/img/Logo Preto Simulador.png" alt="Logo REAL">
+          <p>© 2025 REAL. Todos os direitos reservados</p>
+        </div>
+        <div class="simulador-card">
+          <h1>Simulador de Orçamento</h1>
+          <form id="orcamento-form">
+            <label for="name">Qual seu Nome?</label>
+            <input type="text" id="name" placeholder="Digite seu nome" required>
+
+            <label for="floor-type">Tipo de Piso</label>
+            <select id="floor-type" required>
+              <option value="">Escolha o tipo de piso</option>
+              <option value="ceramica">Cerâmica</option>
+              <option value="porcelanato">Porcelanato</option>
+              <option value="madeira">Madeira</option>
+            </select>
+
+            <label for="metros-quadrados">Quantos metros quadrados (m²)?</label>
+            <input type="number" id="metros-quadrados" placeholder="Digite quantos m² você deseja" required>
+
+            <label for="cep">Qual seu CEP?</label>
+            <input type="text" id="cep" placeholder="Digite seu CEP (ex: 12345678)" required>
+
+            <label for="bairro">Qual sua Localidade?</label>
+            <input type="text" id="bairro" placeholder="Bairro será preenchido automaticamente" readonly>
+
+            <label for="data-servico">Quando você precisa do Serviço?</label>
+            <input type="date" id="data-servico" required>
+
+            <button type="submit">Obter Orçamento prévio</button>
+          </form>
+        </div>
+        <div class="recibo-container" id="recibo">
+          <h3>Orçamento Gerado - Instalação Piso</h3>
+          <p><strong>Cliente:</strong> <span id="recibo-nome"></span></p>
+          <p><strong>Tipo de serviço:</strong> Instalação Piso</p>
+          <p><strong>Tipo de piso:</strong> <span id="recibo-tipo-piso"></span></p>
+          <p><strong>Localização:</strong> <span id="recibo-bairro"></span></p>
+          <p><strong>Data para execução:</strong> <span id="recibo-data"></span></p>
+          <h4>Detalhamento do Orçamento</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+                <th>Total (R$)</th>
+              </tr>
+            </thead>
+            <tbody id="recibo-detalhes"></tbody>
+          </table>
+          <p class="total">Total do Orçamento: R$<span id="recibo-total"></span></p>
+          <p class="observacao">
+            Observações: Valores sujeitos a alteração caso o imóvel-local não tenha as condições mínimas necessárias para executar o serviço. A solicitação de orçamento não garante reserva de agenda, apenas o pagamento inicial confirma a solicitação.
+          </p>
+          <p class="confirmar">
+            Deseja Confirmar e Solicitar o Orçamento?
+            <br>
+            <div class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/5511999999999" target="_blank">Solicitar Orçamento via WhatsApp</a>
+            </div>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>© 2025 REAL. GGABS. Todos os direitos reservados.</p>
+        <img src="./assets/img/Logo Branca Footer.png" alt="Logo REAL">
+      </div>
+    </footer>
+
+    
+    <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+    <!-- Adicionando o Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      // Inicializando o Slick Carousel para a seção "Como funciona"
+      $(document).ready(function() {
+        $('.how-to-use-slick').slick({
+          slidesToShow: 1, // Exibe 1 slide por vez
+          slidesToScroll: 1, // Avança 1 slide por vez
+          autoplay: true, // Ativa autoplay
+          autoplaySpeed: 3000, // Velocidade de troca de slides
+          dots: true, // Exibe os pontos de navegação
+          arrows: false, // Desativa as setas de navegação
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2, // Exibe 2 slides em telas maiores que 768px
+              }
+            },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3, // Exibe 3 slides em telas maiores que 1024px
+              }
+            }
+          ]
+        });
+      });
+    </script>
+  </body>
 </html>
