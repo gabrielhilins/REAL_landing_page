@@ -1,0 +1,391 @@
+/* Header */
+.free-visualization-container {
+    top: 0;
+}
+
+.free-visualization-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 240, 240, 0.95) 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+  
+.free-visualization-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
+  
+.free-visualization-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #00c49a;
+    border-radius: 2px;
+}
+  
+.free-visualization-header .intro-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 15px;
+    text-align: justify;
+}
+  
+.free-visualization-header .intro-text strong {
+    color: #00c49a;
+    font-weight: 700;
+}
+  
+.free-visualization-header .observacao-title {
+    font-size: 0.95rem;
+    color: #777;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+  
+.free-visualization-header .observacoes-free-visualization {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 30px;
+    list-style-type: disc;
+}
+  
+.free-visualization-header .observacoes-free-visualization li {
+    margin-bottom: 10px;
+}
+  
+/* Simulador e Recibo */
+#free-visualization {
+    display: flex;
+    flex-direction: column; /* Garante que header e simulador fiquem em coluna */
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 300px;
+}
+  
+.simulador-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Garante que os elementos internos fiquem em coluna */
+    align-items: center;
+}
+  
+.simulador-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%; /* Garante que o card ocupe a largura disponível */
+}
+  
+.simulador-card h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.simulador-card label {
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #302b2b;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+  
+.simulador-card input,
+.simulador-card select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+.simulador-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00c4b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+  
+.simulador-card button:hover {
+    background-color: #00b0a3;
+}
+  
+.recibo-container {
+    display: none; /* Escondido inicialmente */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    max-width: 600px;
+    margin: 20px auto;
+    width: 100%; /* Garante que o recibo ocupe a largura disponível */
+}
+
+.recibo-infos {
+    text-align: justify;
+}
+  
+.recibo-container h3 {
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+  
+.recibo-container p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+}
+  
+.recibo-container h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 15px 0 10px;
+}
+  
+.recibo-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+  
+.recibo-container th,
+.recibo-container td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+  
+.recibo-container th {
+    background-color: #f0f0f0;
+    font-weight: 500;
+}
+  
+.recibo-container .total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+  
+.recibo-container .observacao {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 10px;
+    text-align: justify;
+}
+  
+.recibo-container ul {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 5px;
+    padding-left: 20px;
+    text-align: justify;
+}
+  
+.recibo-container ul li {
+    margin-bottom: 5px;
+}
+  
+.recibo-container .whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(37, 211, 102);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+  
+.recibo-container .whatsapp:hover {
+    background-color: #00b0a3;
+}
+
+.whatsapp a {
+    color: white;
+    text-decoration: none;
+}
+  
+.simular-outro {
+    display: block;
+    margin: 15px auto 0;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+  
+.simular-outro:hover {
+    background-color: #e0e0e0;
+}
+
+.confirmar {
+    padding: 20px;
+}
+
+/* Estilo do Loader */
+.loader {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Mudado de relative para absolute para posicionar em relação ao contêiner pai */
+    top: calc(100% + 20px); /* Posiciona o loader logo abaixo do free-visualization-header */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza apenas horizontalmente */
+    z-index: 1000;
+    width: auto; /* Remove restrições de largura */
+    height: auto; /* Remove restrições de altura */
+    background: rgba(255, 255, 255, 0.9); /* Fundo leve para destaque */
+    padding: 20px; /* Espaço interno */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+  
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #00c4b4;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+  
+.loader p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+/* Garantir que o input de número rejeite letras */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+  
+/* Responsividade */
+@media (max-width: 1024px) {
+    .free-visualization-header {
+        max-width: 700px;
+    }
+  
+    .simulador-card,
+    .recibo-container {
+        max-width: 500px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .free-visualization-header {
+        max-width: 90%;
+        padding: 15px;
+    }
+  
+    .free-visualization-header h1 {
+        font-size: 2rem;
+    }
+  
+    .free-visualization-header .intro-text {
+        font-size: 1rem;
+    }
+  
+    .simulador-card,
+    .recibo-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+  
+    .simulador-card h1 {
+        font-size: 1.3rem;
+    }
+  
+    .recibo-container h3 {
+        font-size: 1.2rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    .free-visualization-header {
+        max-width: 100%;
+        padding: 10px;
+    }
+  
+    .free-visualization-header h1 {
+        font-size: 1.8rem;
+    }
+  
+    .free-visualization-header .intro-text {
+        font-size: 0.9rem;
+    }
+  
+    .simulador-container {
+        padding: 10px;
+    }
+  
+    .simulador-card,
+    .recibo-container {
+        max-width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+  
+    .simulador-card input,
+    .simulador-card select {
+        font-size: 0.9rem;
+    }
+  
+    .simulador-card button,
+    .recibo-container .whatsapp,
+    .simular-outro {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+}

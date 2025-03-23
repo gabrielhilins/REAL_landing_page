@@ -1,0 +1,146 @@
+#home {
+    background-color: #fff;
+    padding: 50px 20px;
+    min-height: 100vh;
+  }
+  
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+  }
+  
+  .left-panel, .right-panel {
+    flex: 1;
+  }
+  
+  .left-panel img {
+    max-width: 100%;
+  }
+  
+  .right-panel h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .right-panel p {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .right-panel-title h1 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .right-panel-title p {
+    color: #00c49a;
+    font-size: 38px;
+    font-weight: 700;
+  }
+  
+  .buttons-div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .button-saiba-mais {
+    width: 100%;
+    max-width: 600px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 20px;
+    background: #00c49a;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .button-saiba-mais:hover {
+    background-color: #00b0a3;
+    transform: scale(1.05);
+  }
+  
+  .button-saiba-mais i {
+    font-size: 1.2rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 1024px) {
+    .hero-container {
+      gap: 20px;
+    }
+  
+    .right-panel-title h1 {
+      font-size: 28px;
+    }
+  
+    .right-panel-title p {
+      font-size: 40px;
+    }
+  
+    .button-saiba-mais {
+      max-width: 500px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .right-panel-title h1, .right-panel-title p {
+      text-align: center;
+    }
+  
+    .buttons-div {
+      justify-content: center;
+    }
+  
+    .button-saiba-mais {
+      max-width: 300px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .right-panel-title h1 {
+      font-size: 24px;
+    }
+  
+    .right-panel-title p {
+      font-size: 32px;
+    }
+  
+    .right-panel p {
+      font-size: 1rem;
+    }
+  
+    .button-saiba-mais {
+      height: 50px;
+      font-size: 14px;
+    }
+  
+    .button-saiba-mais i {
+      font-size: 1rem;
+    }
+  }
