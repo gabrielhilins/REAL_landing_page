@@ -54,9 +54,12 @@ document.getElementById('orcamento-form').addEventListener('submit', function (e
   
     // Mostrar o loader
     const loader = document.getElementById('loader');
+    // Reiniciar o loader caso ele tenha sido ocultado antes
+    loader.style.display = 'none';
+    void loader.offsetWidth;
+    loader.style.display = 'flex';
     const simuladorCard = document.querySelector('.simulador-card');
     const recibo = document.getElementById('recibo');
-    loader.style.display = 'flex';
     simuladorCard.style.display = 'none';
   
     // Valores fictícios para o cálculo
