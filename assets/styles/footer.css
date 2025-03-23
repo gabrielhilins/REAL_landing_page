@@ -12,7 +12,7 @@ footer {
   }
   
   .footer-container p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   
   .footer-container img {
@@ -22,7 +22,7 @@ footer {
   /* Responsividade */
   @media (max-width: 768px) {
     .footer-container p {
-      font-size: 0.85rem;
+      font-size: 1rem;
     }
   
     .footer-container img {

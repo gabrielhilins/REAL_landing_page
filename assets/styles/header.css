@@ -23,12 +23,38 @@ nav img {
     height: 50px;
 }
 
+/* Estilo do ícone hambúrguer */
+#burguer {
+    display: none; /* Escondido por padrão em telas grandes */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease;
+    z-index: 1001;
+}
+
+#burguer:hover {
+    color: #00c49a;
+}
+
+/* Estilo do menu */
+#itens {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 /* Lista de navegação */
 #nav-list {
     list-style: none;
     display: flex;
     gap: 20px;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 #nav-list li a {
@@ -48,8 +74,7 @@ nav img {
 }
 
 /* Estilo para o botão "Adquira já" */
-#get-it-now,
-#get-it-now-mobile {
+#get-it-now {
     background-color: white;
     color: #00c4b4;
     border: #00c49a 2px solid;
@@ -65,48 +90,21 @@ nav img {
     box-shadow: 0px 4px 4px 0px rgba(0, 196, 154, 0.25);
 }
 
-#get-it-now:hover,
-#get-it-now-mobile:hover {
+#get-it-now:hover {
     background-color: #00b0a3;
     color: white;
 }
 
-/* Estilo do botão hambúrguer */
-.hamburger {
-    display: none; /* Escondido por padrão */
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #333;
-    cursor: pointer;
-    padding: 5px;
-    transition: color 0.3s ease;
-    z-index: 1001; /* Garante que o botão fique acima do overlay */
-}
-
-.hamburger:hover {
-    color: #00c49a;
-}
-
 /* Overlay para o menu mobile */
 .menu-overlay {
-    display: none; /* Inicialmente oculto */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 998; /* Fica abaixo do menu, mas acima do conteúdo */
-}
-
-/* Classes auxiliares */
-.desktop-only {
-    display: block;
-}
-
-.mobile-only {
-    display: none;
+    z-index: 998;
 }
 
 /* Responsividade */
@@ -119,51 +117,45 @@ nav img {
         gap: 15px;
     }
 
-    #get-it-now,
-    #get-it-now-mobile {
+    #get-it-now {
         font-size: 1rem;
         padding: 8px 15px;
     }
 }
 
 @media (max-width: 768px) {
-    /* Exibe o botão hambúrguer em telas pequenas */
-    .hamburger {
+    #burguer {
         display: block;
     }
 
-    /* Esconde o botão "Adquira já" desktop */
-    #get-it-now.desktop-only {
+    #itens {
         display: none;
-    }
-
-    /* Mostra o botão "Adquira já" mobile no nav */
-    #get-it-now-mobile.mobile-only {
-        display: flex;
-    }
-
-    /* Estilo do menu mobile (drawer) */
-    #nav-list {
-        display: none; /* Inicialmente oculto */
         position: fixed;
         top: 0;
-        right: -5%;
-        transform: translateX(-50%);
-        width: 250px;
+        right: 0; /* Mantém o menu ancorado à direita */
+        width: 80%; /* Usa porcentagem para evitar ultrapassar a tela */
+        max-width: 250px; /* Limita a largura máxima */
         height: 100vh;
         background-color: #ffffff;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.15); /* Sombra à esquerda */
         transition: transform 0.3s ease;
         z-index: 999;
+        transform: translateX(100%); /* Esconde o menu à direita */
     }
 
-    #nav-list.active {
+    #itens.active {
         display: flex;
-        transform: translateX(-50%) translateY(0);
+        transform: translateX(0); /* Mostra o menu */
+    }
+
+    #nav-list {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
     }
 
     #nav-list li {
@@ -177,7 +169,6 @@ nav img {
         display: block;
     }
 
-    /* Exibe o overlay quando o menu está ativo */
     .menu-overlay.active {
         display: block;
     }
@@ -188,23 +179,20 @@ nav img {
         height: 40px;
     }
 
-    .hamburger {
+    #burguer {
         font-size: 1.3rem;
     }
 
-    #nav-list {
-        width: 200px;
-    }
-
-    #nav-list.active {
-        transform: translateX(-50%) translateY(0);
+    #itens {
+        width: 70%; /* Reduz ainda mais em telas menores */
+        max-width: 200px;
     }
 
     #nav-list li a {
         font-size: 1rem;
     }
 
-    #get-it-now-mobile {
+    #get-it-now {
         font-size: 0.9rem;
         padding: 8px 12px;
     }

@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>REAL - Simulador de Orçamentos</title>
-    <link rel="icon" href="./assets/img/FavIcon.ico" type="image/x-icon">
+
+    <!--Link do Fav Icon-->
+    <link rel="icon" href="./assets/img/FavIcon.ico" type="image/x-icon" />
+
+    <!--Links dos CSS Locais-->
     <link rel="stylesheet" href="./assets/styles/reset.css" />
     <link rel="stylesheet" href="./assets/styles/header.css" />
     <link rel="stylesheet" href="./assets/styles/home.css" />
@@ -13,20 +17,22 @@
     <link rel="stylesheet" href="./assets/styles/free-visualization.css" />
     <link rel="stylesheet" href="./assets/styles/cta.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
+
+    <!--Link do Font Awesome, (para usar os ícones)-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+
+    <!--Links da Fonte Roboto pelo Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+
+    <!-- CSS da Biblioteca Slick Carousel-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -35,7 +41,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
+
+    <!--CSS da biblioteca AOS (Animate On Scroll)-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!--CSS da Biblioteca Toastify-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
@@ -43,46 +53,44 @@
   </head>
 
   <body>
+    <!--Header da página com o navbar e seus links-->
     <header>
       <nav>
         <img
           src="./assets/img/Logo Verde Header.png"
           alt="Logo REAL Simulador de orçamentos"
         />
-        <button class="hamburger" aria-label="Abrir menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <ul id="nav-list">
-          <li><a class="nav-home" href="#home">Início</a></li>
-          <li><a class="nav-benefits" href="#benefits">Vantagens</a></li>
-          <li>
-            <a class="nav-how-to-use" href="#how-to-use">Como Funciona</a>
-          </li>
-          <li>
-            <a class="nav-free-visualization" href="#free-visualization">
-              Teste Grátis
-            </a>
-          </li>
-          <li class="mobile-only">
-            <button id="get-it-now-mobile">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>Adquira já
-            </button>
-          </li>
-        </ul>
-        <button id="get-it-now" class="desktop-only">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>Adquira já
-        </button>
+        <i id="burguer" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+        <menu id="itens">
+          <ul id="nav-list">
+            <li><a class="nav-home" href="#home">Início</a></li>
+            <li><a class="nav-benefits" href="#benefits">Vantagens</a></li>
+            <li>
+              <a class="nav-how-to-use" href="#how-to-use">Como Funciona</a>
+            </li>
+            <li>
+              <a class="nav-free-visualization" href="#free-visualization">
+                Teste Grátis
+              </a>
+            </li>
+          </ul>
+          <button id="get-it-now" onclick="enviarMensagem()">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>Adquira já
+          </button>
+        </menu>
       </nav>
     </header>
+    <div class="menu-overlay"></div>
 
+    <!--Seção inicial da landing page-->
     <section id="home" data-aos="fade-up">
       <div class="hero-container">
-        <div class="right-panel" data-aos="fade-right">
-          <div class="right-panel-title">
-            <h1>Orçamentos Rápidos, Negócios Fechados!</h1>
-            <p>
+        <div class="left-panel" data-aos="fade-right">
+          <div class="left-panel-title">
+            <p>Orçamentos Rápidos, Negócios Fechados!</p>
+            <h1>
               Deixe o REAL simplificar orçamentos para você e seus clientes.
-            </p>
+            </h1>
           </div>
           <p>
             Para o cliente: um orçamento
@@ -100,14 +108,16 @@
             </div>
           </div>
         </div>
-        <div class="left-panel" data-aos="fade-left">
+        <div class="right-panel" data-aos="fade-left">
           <img src="./assets/img/Ilustracao 1.png" alt="Ilustração" />
         </div>
       </div>
     </section>
 
+    <!--Seção de Vantagens/Benefícios do simulador-->
     <section id="benefits" data-aos="fade-up">
       <div class="benefits-container">
+        <!--Header da Seção-->
         <div class="benefits-header" data-aos="fade-up">
           <h1>Por que o REAL é a solução ideal para você e sua empresa?</h1>
           <p>
@@ -115,6 +125,8 @@
             dos clientes e impulsiona os resultados do seu negócio.
           </p>
         </div>
+
+        <!--Cards com os benefícios-->
         <div class="benefits-cards-container">
           <div class="card" data-aos="fade-up" data-aos-delay="100">
             <i class="fa-solid fa-clock"></i>
@@ -190,11 +202,15 @@
       </div>
     </section>
 
+    <!--Seção de como funciona o Simulador-->
     <section id="how-to-use" data-aos="fade-up">
       <div class="how-to-use-container">
+        <!--Header da Seção-->
         <div class="how-to-use-header" data-aos="fade-up">
           <h1>Como o REAL funciona para você e seu negócio</h1>
         </div>
+
+        <!--Timeline utilizada como forma de explicar o passo a passo-->
         <div class="timeline">
           <div class="timeline-item left" data-aos="fade-right">
             <div class="timeline-content">
@@ -282,8 +298,10 @@
       </div>
     </section>
 
+    <!--Seção de teste grátis do simulador-->
     <section id="free-visualization" data-aos="fade-up">
       <div class="free-visualization-container">
+        <!--Header da seção-->
         <div class="free-visualization-header" data-aos="fade-up">
           <h1>Teste o REAL com uma Simulação Gratuita</h1>
           <p class="intro-text" data-aos="fade-up">
@@ -298,7 +316,7 @@
             para a Empresa X, significa captar clientes como você, que já estão
             prontos para decidir!
           </p>
-          <p class="observacao-title" data-aos="fade-up">* Observações:</p>
+          <p class="observacao-title" data-aos="fade-up">* Observações sobre esse teste grátis:</p>
           <ul class="observacoes-free-visualization" data-aos="fade-up">
             <li>
               Os valores são estimativas baseadas em preços de mercado e podem
@@ -313,12 +331,14 @@
           </ul>
         </div>
 
+        <!--Simulador-->
         <div class="simulador-container">
           <div class="logo" data-aos="fade-up">
             <img src="./assets/img/Logo Preto Simulador.png" alt="Logo REAL" />
             <p>© 2025 REAL. Todos os direitos reservados</p>
           </div>
 
+          <!--Formulário do Simulador-->
           <div class="simulador-card" data-aos="zoom-in">
             <h1>Simulador de Orçamento</h1>
             <form id="orcamento-form">
@@ -326,7 +346,7 @@
               <input
                 type="text"
                 id="name"
-                placeholder="Digite seu nome"
+                placeholder="Digite seu Nome e Sobrenome"
                 required
                 autocomplete="off"
               />
@@ -368,6 +388,7 @@
             </form>
           </div>
 
+          <!--"Recibo" gerado pelo simulador-->
           <div
             class="recibo-container"
             id="recibo"
@@ -409,7 +430,7 @@
             </h4>
             <p class="observacao">Observações:</p>
             <ul>
-              <li>O orçamento pode variar após inspeção no local.</li>
+              <li>Orçamento sujeito à alteração.</li>
               <li>Validade do orçamento: 7 dias.</li>
               <li>
                 Quer ajustar algo? Refaça a simulação ou entre em contato!
@@ -420,11 +441,11 @@
               Deseja Confirmar e Solicitar o Orçamento?<br />
             </h3>
             <div class="whatsapp">
-              <i class="fa-brands fa-whatsapp"></i>
-              <a href="https://wa.me/5511999999999" target="_blank"
-                >Solicitar Orçamento via WhatsApp</a
-              >
-            </div>
+              <button id="whatsapp-button">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  Solicitar Orçamento via WhatsApp
+              </button>
+          </div>
             <button id="simular-outro" class="simular-outro">
               <i class="fa-solid fa-repeat"></i> Simular Outro Orçamento
             </button>
@@ -432,19 +453,14 @@
         </div>
       </div>
 
+      <!--Loador do simulador-->
       <div class="loader" id="loader" style="display: none">
         <div class="spinner"></div>
         <p>Calculando seu orçamento...</p>
       </div>
-
-      <!-- Dependências -->
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-      />
-      <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     </section>
 
+    <!--Seção de Call to Action-->
     <section id="call-to-action" data-aos="fade-up">
       <div class="cta-container">
         <h1>Gostou? Então por que esperar?</h1>
@@ -455,25 +471,34 @@
         <p>
           Tenha o REAL na sua empresa hoje mesmo e veja seus negócios decolarem!
         </p>
-        <button class="cta-button">Adquira o REAL agora!</button>
+        <button class="cta-button" onclick="enviarMensagem()">Adquira o REAL agora!</button>
       </div>
     </section>
 
+    <!--Footer-->
     <footer>
       <div class="footer-container">
         <p>
-          © 2025 REAL. Totalmente idealizado e desenvolvido por Gabriel Henrique
-          Lins. Todos os direitos reservados.
+          © 2025 REAL. Totalmente idealizado e desenvolvido por
+          <strong>Gabriel Henrique Lins.</strong> Todos os direitos reservados.
         </p>
       </div>
     </footer>
 
+    <!-- Scripts Externos -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./assets/scripts/script.js"></script>
+    <!-- Biblioteca AOS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Scripts Locais -->
+    <script src="./assets/scripts/aos.js"></script>
+    <script src="./assets/scripts/whatsapp.js"></script>
+    <script src="./assets/scripts/menu.js"></script>
+    <script src="./assets/scripts/simulator.js"></script>
+    <script src="./assets/scripts/toastfy.js"></script>
   </body>
 </html>

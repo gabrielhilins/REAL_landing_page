@@ -218,25 +218,27 @@
 }
   
 .recibo-container .whatsapp {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    background-color: rgb(37, 211, 102);
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-  
-.recibo-container .whatsapp:hover {
-    background-color: #00b0a3;
+    display: inline-flex; /* Mantém o container flexível */
+    gap: 5px; /* Espaço entre elementos, se houver mais de um */
 }
 
-.whatsapp a {
+.recibo-container #whatsapp-button {
+    display: inline-flex;
+    align-items: center; 
+    gap: 10px;
+    background-color: rgb(37, 211, 102);
     color: white;
+    padding: 10px 20px; 
     text-decoration: none;
+    border-radius: 5px; 
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer; 
+}
+
+.recibo-container #whatsapp-button:hover {
+    background-color: #00b0a3; /* Cor de hover */
 }
   
 .simular-outro {
