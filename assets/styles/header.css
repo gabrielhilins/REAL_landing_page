@@ -7,7 +7,6 @@
     --sidebar-width: 280px;
     --transition: all 0.3s ease;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    --gradient: linear-gradient(90deg, #aff0ff 0%, #6046ff 50%, #00ddeb 100%);
   }
   
   /* Header */
@@ -106,7 +105,7 @@
     height: 2px;
     bottom: 0;
     left: 50%;
-    background: var(--gradient);
+    background: var(--primary-color);
     transition: width 0.3s ease, left 0.3s ease;
   }
   
