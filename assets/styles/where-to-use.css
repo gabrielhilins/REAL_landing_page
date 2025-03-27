@@ -1,130 +1,138 @@
 #where-to-use-website {
-    background: white;
-    padding: 80px 20px;
+  background: white;
+  padding: 80px 20px;
+}
+
+.where-to-use-container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.site, .insta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 300px;
+  gap: 120px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  justify-content: center;
+}
+
+.site {
+  animation-delay: 0.2s;
+}
+
+.insta {
+  animation-delay: 0.4s;
+  flex-direction: row-reverse; /* Inverte a ordem para a seção do Instagram */
+}
+
+.text-content {
+  flex: 1;
+  color: black;
+  display: flex; /* Adicionado para centralizar o conteúdo */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+}
+
+.text-content h1 {
+  font-size: 32px;
+  color: #00c49a;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 500px;
+  text-align: justify;
+}
+
+.download-btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #00c49a;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none; 
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: fit-content; /* Garante que o botão não ocupe toda a largura */
+}
+
+.download-btn:hover {
+  background: #00a080;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.image-content img:hover {
+  transform: translateY(10px);
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
-  
-  .where-to-use-container {
-    max-width: 1200px;
-    margin:auto;
-    margin-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   .site, .insta {
-    display: flex;
-    align-items: center;
-    margin-bottom: 300px;
-    gap: 120px;
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-    justify-content: center;
-  }
-  
-  .site {
-    animation-delay: 0.2s;
-  }
-  
-  .insta {
-    animation-delay: 0.4s;
-    flex-direction: row-reverse; /* Inverte a ordem para a seção do Instagram */
-  }
-  
-  .text-content {
-    flex: 1;
-    color: black;
-  }
-  
-  .text-content h1 {
-    font-size: 32px;
-    color: #00c49a;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    font-weight: 700;
-  }
-  
-  .text-content p {
-    font-size: 16px;
-    color: #b0b0b0;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    max-width: 500px;
-    text-align: justify;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 200px;
   }
 
-  
-  
   .download-btn {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background: #00c49a;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background 0.3s ease;
+    font-size: 16px;
   }
-  
-  .download-btn:hover {
-    background: #00a080;
-  }
-  
-  .image-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .image-content img {
-    max-width: 100%;
-    transform: translateY(20px);
-    transition: transform 0.3s ease;
-  }
-  
-  .image-content img:hover {
-    transform: translateY(10px);
-  }
-  
-  /* Animação de entrada */
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .site, .insta {
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 200px;
-    }
 
-    .download-btn {
-        font-size: 16px;
-    }
-  
-    .insta {
-      flex-direction: column; /* Garante que a seção do Instagram também fique em coluna no mobile */
-    }
-  
-    .text-content h1 {
-      font-size: 24px;
-    }
-  
-    .text-content p {
-      font-size: 14px;
-      margin: 0 auto 20px;
-    }
-  
-    .image-content img {
-      max-width: 80%;
-      transform: translateY(0);
-    }
+  .insta {
+    flex-direction: column; /* Garante que a seção do Instagram também fique em coluna no mobile */
   }
+
+  .text-content h1 {
+    font-size: 24px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+    margin: 0 auto 20px;
+  }
+
+  .image-content img {
+    max-width: 80%;
+    transform: translateY(0);
+  }
+
+  .text-content {
+    align-items: center; /* Mantém o botão centralizado no mobile */
+  }
+}

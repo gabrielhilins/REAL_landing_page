@@ -484,10 +484,10 @@
           <div class="text-content" data-aos="fade-up" data-aos-delay="100">
             <h1>Integre ao seu Website <i class="fa-solid fa-arrow-pointer"></i></h1>
             <p>Você Pode ter o <strong>REAL</strong> diretamente no site da sua empresa para oferecer orçamentos personalizados aos seus clientes de forma prática e profissional.</p>
-            <a href="#" class="download-btn">
+            <button onclick="enviarMensagemSite()" class="download-btn">
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
               Tenha o REAL no seu site agora!
-            </a>
+            </button>
           </div>
           <div class="image-content" data-aos="fade-right" data-aos-delay="300">
             <img src="./assets/img/svg/undraw_website_27ju.svg" alt="Demonstração de integração no website" />
@@ -498,10 +498,10 @@
           <div class="text-content" data-aos="fade-up" data-aos-delay="100">
             <h1>Link na Bio do <i class="fa-brands fa-instagram"></i> Instagram</h1>
             <p>Transforme seu Instagram em uma máquina de conversões! Com o <strong>REAL</strong> na bio do seu negócio, seus seguidores e visitantes geram orçamentos personalizados com um clique na bio, sem mensagens demoradas ou esperas.</p>
-            <a href="#" class="download-btn">
+            <button onclick="enviarMensagemInsta()" class="download-btn">
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
               Tenha o REAL na bio do Insta agora mesmo!
-            </a>
+            </button>
           </div>
           <div class="image-content" data-aos="fade-left" data-aos-delay="300">
             <img src="./assets/img/svg/undraw_social-share_9clm.svg" alt="Demonstração de link na bio do Instagram" />
@@ -525,6 +525,10 @@
           <i class="fa-solid fa-handshake"></i>
           Adquira o REAL agora!
         </button>
+        <p class="knowSomeone">
+          Conhece alguém que se beneficiaria do REAL? Compartilhe com essa pessoa o link do site: 
+          <a href="#" id="copyLink" onclick="copiarLink()">Clique aqui para copiar o link</a>
+        </p>
       </div>
     </section>
 
@@ -553,5 +557,6 @@
     <script src="./assets/scripts/menu.js"></script>
     <script src="./assets/scripts/simulator.js"></script>
     <script src="./assets/scripts/toastfy.js"></script>
+    <script src="./assets/scripts/cta.js"></script>
   </body>
 </html>

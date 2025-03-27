@@ -79,3 +79,12 @@
       font-size: 0.85rem;
     }
   }
+
+.knowSomeone {
+  margin-top: 40px;
+
+  p, a {
+    color: white; 
+    font-size: 16px;
+  }
+}
